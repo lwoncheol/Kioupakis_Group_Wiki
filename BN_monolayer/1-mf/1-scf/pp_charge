@@ -1,0 +1,14 @@
+&INPUTPP
+prefix='BN',
+plot_num=0,
+filplot='Charge'
+/
+&INPUTPP
+/
+&plot
+nfile=1
+filepp(1)='Charge'
+iflag=3,
+fileout="Charge.cube"
+output_format=6
+/
