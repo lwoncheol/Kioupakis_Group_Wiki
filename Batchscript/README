@@ -1,1 +1,3 @@
 Batchscript for submitting jobs on NERSC / Greatlakes
+
+Type "sbatch batchscript" to submit your job
