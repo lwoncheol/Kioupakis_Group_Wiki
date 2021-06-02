@@ -1,1 +1,5 @@
-This is tutorial files for bulk BN
+* Tutorial files for bulk BN
+
+Overall process
+1. Meanfield : scf --> bands calculation (WFN, WFNq, WFN_co) --> convert format (QE to BGW)
+2. GW & BSE : epsilon --> sigma --> kernel --> absorption
