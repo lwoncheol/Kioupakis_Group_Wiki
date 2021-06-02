@@ -1,0 +1,14 @@
+#!/bin/bash -l
+#SBATCH --job-name=pbi2          # job name
+#SBATCH --partition=standard    
+#SBATCH --nodes=1                # Number of nodes you request. Don't ask more than 1
+#SBATCH --ntasks-per-node=2      # number of task per a node (number of CPU-cores per a node) 
+#SBATCH --mem-per-cpu=1400m      # memory per a CPU-core 
+#SBATCH --time=24:00:00          # Computation time you request
+#SBATCH --mail-type=FAIL         
+#SBATCH --account=engin1
+
+module load Chemistry
+module load espresso
+
+srun -n 2 pw.x -npool 2 < scf.in > scf.out
