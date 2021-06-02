@@ -21,36 +21,36 @@ echo "Linking WFNs to BGW directory"
 cd ../2-bgw/
 
 echo " Working on directory 1-epsilon"
-cd 1-eps/
+cd 1-epsilon/
 ln -sf ../../1-mf/2-wfn/wfn.cplx WFN
 ln -sf ../../1-mf/3-wfnq/wfn.cplx WFNq
 cd ../
 
 echo " Working on directory 2-sigma"
-cd 2-sig/
+cd 2-sigma/
 ln -sf ../../1-mf/4-wfn_co/rho.cplx ./RHO
 ln -sf ../../1-mf/4-wfn_co/wfn.cplx WFN_inner
 ln -sf ../../1-mf/4-wfn_co/vxc.dat .
-ln -sf ../1-eps/eps0mat.h5 .
-ln -sf ../1-eps/epsmat.h5 .
+ln -sf ../1-epsilon/eps0mat.h5 .
+ln -sf ../1-epsilon/epsmat.h5 .
 cd ..
 
 echo " Working on directory 3-kernel"
-cd 3-ker/
+cd 3-kernel/
 ln -sf ../../1-mf/4-wfn_co/wfn.cplx WFN_co
-ln -sf ../1-eps/epsmat.h5 .
-ln -sf ../1-eps/eps0mat.h5 .
+ln -sf ../1-epsilon/epsmat.h5 .
+ln -sf ../1-epsilon/eps0mat.h5 .
 cd ../
 
 echo " Working on directory 4-absorption"
-cd 4-abs/
+cd 4-absorption/
 ln -sf ../../1-mf/4-wfn_co/wfn.cplx WFN_co
 ln -sf ../../1-mf/5-wfn_fi/wfn.cplx WFN_fi
 ln -sf ../../1-mf/6-wfnq_fi/wfn.cplx WFNq_fi
-ln -sf ../1-eps/epsmat.h5 .
-ln -sf ../1-eps/eps0mat.h5 .
-ln -sf ../2-sig/eqp1.dat eqp_co.dat
-ln -sf ../3-ker/bsemat.h5 .
+ln -sf ../1-epsilon/epsmat.h5 .
+ln -sf ../1-epsilon/eps0mat.h5 .
+ln -sf ../2-sigma/eqp1.dat eqp_co.dat
+ln -sf ../3-kernel/bsemat.h5 .
 cd ../
 
 echo
