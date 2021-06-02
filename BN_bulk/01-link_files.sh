@@ -7,10 +7,10 @@ echo "Linking pseudopotential and charge densities"
 for directory in {2,3,4,5,6}*-*/; do
   echo " Working on directory $directory"
   cd $directory
-  mkdir GaN.save
-  cd GaN.save
-  cp ../../1-scf/GaN.save/charge-density.* .
-  cp ../../1-scf/GaN.save/data-file-schema.xml .
+  mkdir BN.save
+  cd BN.save
+  cp ../../1-scf/BN.save/charge-density.* .
+  cp ../../1-scf/BN.save/data-file-schema.xml .
   cd ..
   cp ../1-scf/*.UPF .
   cd ../
