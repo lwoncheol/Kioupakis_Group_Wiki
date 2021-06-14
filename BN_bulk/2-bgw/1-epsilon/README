@@ -1,1 +1,6 @@
 Input files for dielectric matrix calculation
+
+To link files, use the command below:
+
+ln -sf ../../1-mf/2-wfn/wfn.cplx WFN
+ln -sf ../../1-mf/3-wfnq/wfn.cplx WFNq
