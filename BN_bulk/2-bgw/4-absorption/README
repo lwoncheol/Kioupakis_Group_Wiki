@@ -1,1 +1,11 @@
 Input files for BSE absorption calculation
+
+To link files, you the command below:
+
+ln -sf ../../1-mf/4-wfn_co/wfn.cplx WFN_co
+ln -sf ../../1-mf/5-wfn_fi/wfn.cplx WFN_fi
+ln -sf ../../1-mf/6-wfnq_fi/wfn.cplx WFNq_fi
+ln -sf ../1-epsilon/epsmat.h5 .
+ln -sf ../1-epsilon/eps0mat.h5 .
+ln -sf ../2-sigma/eqp1.dat eqp_co.dat
+ln -sf ../3-kernel/bsemat.h5 .
