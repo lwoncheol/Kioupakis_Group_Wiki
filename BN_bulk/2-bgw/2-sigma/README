@@ -1,1 +1,9 @@
 Input files for quasiparticle GW calculation
+
+To link files, use the command below:
+
+ln -sf ../../1-mf/4-wfn_co/rho.cplx ./RHO
+ln -sf ../../1-mf/4-wfn_co/wfn.cplx WFN_inner
+ln -sf ../../1-mf/4-wfn_co/vxc.dat .
+ln -sf ../1-epsilon/eps0mat.h5 .
+ln -sf ../1-epsilon/epsmat.h5 .
