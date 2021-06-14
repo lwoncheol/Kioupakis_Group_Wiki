@@ -8,14 +8,14 @@ degeneracy_check_override
 screened_coulomb_cutoff 5
 bare_coulomb_cutoff 70
 
-number_bands 30                 % Again, this can fail because of degeneracy. Then choose optimal value from typing "degeneracy_check.x WFN_inner"
+number_bands 12                % Again, this can fail because of degeneracy. Then choose optimal value from typing "degeneracy_check.x WFN_inner"
 
 band_index_min 1
-band_index_max 16
+band_index_max 12
 
 screening_semiconductor
 
-number_sigma_pools 16 
+number_sigma_pools 12
 
 begin kpoints                   % These kponts are same as qpoints you specified in epsilon.inp
  0.000   0.000   0.000   1      % But you don't apply small shift for q->0 case here
