@@ -7,7 +7,7 @@
 #SBATCH --error=err_%j                       # Name of error file
 #SBATCH --output=out_%j                      # Name of output file
 #SBATCH -N 1                                 # Number of node you request. One node has 68 core.
-#SBATCH -S 4                                 # Number of core you are NOT gonna use. Here I specified 4, so you will use 68 - 4 =. 64 core
+#SBATCH -S 20                                 # Number of core you are NOT gonna use. Here I specified 4, so you will use 68 - 4 =. 64 core
 #SBATCH -C knl,quad,cache            
 #SBATCH -t 00:30:00                          # Computation time you request
 #SBATCH --mail-type=END,FAIL                 # Email you when job finish or fail
@@ -15,4 +15,4 @@
 
 module load berkeleygw/2.1.knl               # Module you are gonna use
 
-srun -n 64 bash -c 'sigma.cplx.x -npool 1 -in sigma.inp &> sigma.out'
+srun -n 48 bash -c 'sigma.cplx.x -npool 1 -in sigma.inp &> sigma.out'
