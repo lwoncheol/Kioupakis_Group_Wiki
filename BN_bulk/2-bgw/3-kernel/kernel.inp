@@ -1,7 +1,7 @@
 number_val_bands 8
 number_cond_bands 8
 
-screened_coulomb_cutoff 30
+screened_coulomb_cutoff 5
 bare_coulomb_cutoff 70
 
 screening_semiconductor
