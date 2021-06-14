@@ -1,1 +1,7 @@
 Input files for kernel matrix elements calculation
+
+To link files, you the command below:
+
+ln -sf ../../1-mf/4-wfn_co/wfn.cplx WFN_co
+ln -sf ../1-epsilon/epsmat.h5 .
+ln -sf ../1-epsilon/eps0mat.h5 .
