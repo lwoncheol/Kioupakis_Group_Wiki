@@ -1,7 +1,12 @@
 degeneracy_check_override
 
-epsilon_cutoff 30
+epsilon_cutoff 5      # this has to be always lower than "ecutoff" of DFT calculations
 
-number_bands 810
+number_bands 30       # it may fails, because of degeneracy. Then try run "degeneracy_check.x WFN" and choose the allowed number of bands from output
 
-begin qpoints
+begin qpoints                          # these qpoints should be matche with WFN_co.out
+  0.001   0.000   0.000.  1 1          # First q point (q --> 0) limit, use flag 1 1 so that BGW code notices this qpont as a special qpoint 
+  0.000   0.000   0.500   1 0          # Also apply small shift, which matches with small shift you used in 3-wfnq/WFNq.in
+  0.000   0.500   0.000   1 0           
+  0.000   0.500   0.500   1 0          # For the other qpoints, always use flag as 1 0 
+end
