@@ -1,7 +1,22 @@
 Calculation steps for wannier90. All these steps should be performed in the same directory.
 
 1. Run pw.x < 01_scf.in > 01_scf.out
+
+- Typical scf calculations
+
 2. Run pw.x < 02_nscf.in > 02_nscf.in
+
+- Check calculation = 'nscf' / 'nbnd' / K_POINTS.
+- To generate the list of KPOINTS, type "/global/project/projectdirs/m1380/modules/cori/wannier90/1.1/utility/kmesh.pl 12 12 6 >> kgrid"
+
 3. Type "/global/project/projectdirs/m1380/modules/cori/wannier90/1.1/wannier90.x -pp BN"
+
+- Check BN.wout file is succesfully generated.
+
 4. Run pw2wannier90.x < 03_pw2wan.in > 03_pw2wan.out
+
+- Check 03_pw2wan.out and other output files.
+
 5. Run "srun -n 1 /global/project/projectdirs/m1380/modules/cori/wannier90/1.1/wannier90.x BN"
+
+- This may take a few minutes.
