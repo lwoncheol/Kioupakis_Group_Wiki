@@ -1,0 +1,9 @@
+&inputpp 
+   outdir = './'
+   prefix = 'BN'
+   seedname = 'BN'
+   spin_component = 'none'
+   write_mmn = .true.
+   write_amn = .true.
+   write_unk = .true.
+/
