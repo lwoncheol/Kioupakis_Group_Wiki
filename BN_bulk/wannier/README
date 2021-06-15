@@ -1,0 +1,7 @@
+Calculation steps for wannier90. All these steps should be performed in the same directory.
+
+1. Run pw.x < 01_scf.in > 01_scf.out
+2. Run pw.x < 02_nscf.in > 02_nscf.in
+3. Type "/global/project/projectdirs/m1380/modules/cori/wannier90/1.1/wannier90.x -pp BN"
+4. Run pw2wannier90.x < 03_pw2wan.in > 03_pw2wan.out
+5. Run "srun -n 1 /global/project/projectdirs/m1380/modules/cori/wannier90/1.1/wannier90.x BN"
