@@ -1,5 +1,7 @@
 Calculation steps for wannier90. All these steps should be performed in the same directory.
 
+You need to copy pseudopotential files to this directory.
+
 1. Run pw.x < 01_scf.in > 01_scf.out
 
 - Typical scf calculations
