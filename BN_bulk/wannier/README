@@ -22,3 +22,28 @@ You need to copy pseudopotential files to this directory.
 5. Run "srun -n 1 /global/project/projectdirs/m1380/modules/cori/wannier90/1.1/wannier90.x BN"
 
 - This may take a few minutes.
+
+
+
+%%%%%%%% GW wannier interpolation %%%%%%%%%%
+
+1. First, finish all the steps in GW directory, and assume you get BN_GW_16.eig file.
+
+2. open interpolate_band.f90 file and modify input variables. Variables needed to be changed are :
+
+
+      INTEGER, PARAMETER :: NW = 16, NB=40, NK1=12, NK2=12, NK3=6, NKTOT=NK1*NK2*NK3        % Number of wannier wavefunction and number of bands
+      ...
+      INTEGER, PARAMETER :: nk = 1603!-- number of k-points to interpolate                  % Use the number from BN_band.kpt
+      ...
+      A(:,1) = (/  4.731873875000000e0, 0.000000000000000e0, 0.000000000000000e0 /)         % Use the lattice parameters from BN.save/data** file
+      A(:,2) = (/ -2.365936937500000e0, 4.097922983254201e0, 0.000000000000000e0 /)
+      A(:,3) = (/  0.000000000000000e0, 0.000000000000000e0, 1.258784275404157e1 /)
+      ...
+      open(unit=1,file='BN_GW.eig')                                                         % search 'open' and check all the names of input/output files 
+      
+3. "module load cray-fftw"
+
+4. "ftn -DMPI -o interpolate_band interpolate_band.f90"
+
+5. Using batchscript, "srun -n 32 ./interpolate_band"
