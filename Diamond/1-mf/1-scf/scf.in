@@ -1,0 +1,43 @@
+&control
+   prefix = 'di'
+   calculation = 'scf'
+   restart_mode = 'from_scratch'
+   wf_collect = .true.
+   tstress = .true.
+   tprnfor = .true.
+   outdir = './'
+   wfcdir = './'
+   pseudo_dir = './'
+   verbosity = 'high'
+/
+&system
+   ibrav = 2
+   celldm(1) = 6.7399156081
+   nat = 2
+   nbnd = 6
+   ntyp = 1
+   ecutwfc = 70
+/
+&electrons
+   electron_maxstep = 500
+   conv_thr = 1.0d-10
+   mixing_mode = 'plain'
+   mixing_beta = 0.7
+   mixing_ndim = 8
+   diagonalization = 'david'
+   diago_david_ndim = 4
+   diago_full_acc = .true.
+/
+&ions
+/
+&cell
+/
+ATOMIC_SPECIES
+   C  12.0107  C.cpi.UPF
+
+ATOMIC_POSITIONS (crystal)
+C  -0.125 -0.125 -0.125
+C   0.125  0.125  0.125
+
+K_POINTS automatic
+24 24 24 1 1 1
