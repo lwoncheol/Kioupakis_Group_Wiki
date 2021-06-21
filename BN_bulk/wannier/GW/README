@@ -13,9 +13,9 @@ BN_GW_16.eig             # name of output file which will be generated
 
 *******************************************
 
-3. "module load berkeleygw.2.1.knl"
+3. Type "module load berkeleygw/2.1.knl"
 
-4. "sig2wan.x sig2wan.inp"
+4. Type "sig2wan.x sig2wan.inp"
 
 5. Now you will get BN_GW_16.eig file, which contains GW eigenvalues for 12x12x6 grid / 16 bands. 
 
