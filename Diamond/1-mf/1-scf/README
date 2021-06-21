@@ -1,0 +1,6 @@
+Practice 1.
+
+1. Let's converge ecutwfc first. Try 2x2x2 kgrid and varying ecutwfc from 30 40 50 ... 90 100. And plot total energy vs. ecutwfc. Can you see the convergence ?
+
+2. With the converged ecutwfc value, vary kgrid from 2x2x2 3x3x3 ... 10x10x10. And plot total energy vs. k-grid. Can you see the convergence?
+
