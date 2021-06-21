@@ -32,7 +32,7 @@ You need to copy pseudopotential files to this directory.
 2. open interpolate_band.f90 file and modify input variables. Variables needed to be changed are :
 
 
-      INTEGER, PARAMETER :: NW = 16, NB=40, NK1=12, NK2=12, NK3=6, NKTOT=NK1*NK2*NK3        % Number of wannier wavefunction and number of bands
+      INTEGER, PARAMETER :: NW = 16, NB=40, NK1=12, NK2=12, NK3=6, NKTOT=NK1*NK2*NK3        % Use the number of bands and kpoints from BN.win
       ...
       INTEGER, PARAMETER :: nk = 1603!-- number of k-points to interpolate                  % Use the number from BN_band.kpt
       ...
