@@ -1,0 +1,3 @@
+After you obtain the DFT cutoff parameters, then you have to find GW cutoff parameters.
+
+1. Let's start with 2x2x2 kgrid, and infinite number of bands (~1000).
