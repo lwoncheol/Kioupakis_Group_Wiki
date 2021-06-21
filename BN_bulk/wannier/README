@@ -42,8 +42,8 @@ You need to copy pseudopotential files to this directory.
       ...
       open(unit=1,file='BN_GW.eig')                                                         % search 'open' and check all the names of input/output files 
       
-3. "module load cray-fftw"
+3. Type "module load cray-fftw"
 
-4. "ftn -DMPI -o interpolate_band interpolate_band.f90"
+4. Type "ftn -DMPI -o interpolate_band interpolate_band.f90"
 
 5. Using batchscript, "srun -n 32 ./interpolate_band"
