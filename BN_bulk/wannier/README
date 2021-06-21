@@ -27,7 +27,7 @@ You need to copy pseudopotential files to this directory.
 
 %%%%%%%% GW wannier interpolation %%%%%%%%%%
 
-1. First, finish all the steps in GW directory, and assume you get BN_GW_16.eig file.
+1. First, finish all the steps in GW directory, and assume you get BN_GW.eig file.
 
 2. open interpolate_band.f90 file and modify input variables. Variables needed to be changed are :
 
