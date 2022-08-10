@@ -1,0 +1,5 @@
+&input
+ fildyn='BN.dyn',
+ zasr='simple',         !apply acoustic sum rule (ASR) if working with polar material; can use 'simple' or 'crystal' -- they should give same result
+ flfrc='ifc.q2r'
+ /

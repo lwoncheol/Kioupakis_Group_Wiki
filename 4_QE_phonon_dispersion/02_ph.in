@@ -1,0 +1,14 @@
+phonons for BN
+&inputph
+ prefix = 'BN',
+ fildyn = 'BN.dyn',
+ fildvscf = 'dvscf',
+ epsil = .true.,
+ ldisp = .true.,
+ nq1 = 12,
+ nq2 = 12,
+ nq3 = 6,
+ tr2_ph = 1.0d-14
+ recover = .true.
+ max_seconds = 86000
+/
