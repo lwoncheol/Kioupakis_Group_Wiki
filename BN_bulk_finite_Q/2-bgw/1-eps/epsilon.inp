@@ -1,0 +1,9 @@
+degeneracy_check_override
+
+epsilon_cutoff 30
+
+number_bands 810
+
+begin qpoints
+  0.001000000  0.000000000  0.000000000   1 1
+end
