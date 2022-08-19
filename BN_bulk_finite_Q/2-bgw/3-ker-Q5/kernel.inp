@@ -1,0 +1,11 @@
+number_val_bands 2
+number_cond_bands 2
+
+screened_coulomb_cutoff 30
+bare_coulomb_cutoff 70
+
+screening_semiconductor
+
+exciton_Q_shift 0 0.1388888889 0.1388888889 0.0
+
+no_symmetries_coarse_grid
