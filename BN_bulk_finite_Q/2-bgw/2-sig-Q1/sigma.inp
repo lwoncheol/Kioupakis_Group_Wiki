@@ -1,0 +1,20 @@
+frequency_dependence 1
+exact_static_ch 1
+
+tol_degeneracy 1e-5
+
+degeneracy_check_override
+
+screened_coulomb_cutoff 30
+bare_coulomb_cutoff 70
+
+number_bands 810
+
+band_index_min 1
+band_index_max 16
+
+screening_semiconductor
+
+number_sigma_pools 16
+
+begin kpoints
