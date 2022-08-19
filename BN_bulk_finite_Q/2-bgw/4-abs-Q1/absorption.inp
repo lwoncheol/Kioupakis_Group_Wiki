@@ -1,0 +1,25 @@
+number_val_bands_fine 2
+number_val_bands_coarse 8
+
+number_cond_bands_fine 2
+number_cond_bands_coarse 8
+
+coarse_grid_points 864
+
+degeneracy_check_override
+
+use_velocity
+#q_shift s1 s2 s3
+diagonalization
+screening_semiconductor
+eqp_co_corrections
+eqp_co_q_corrections
+no_symmetries_coarse_grid
+
+exciton_Q_shift   0   0.027777778      0.027777778      0.000000000
+
+energy_resolution 0.05
+gaussian_broadening
+write_eigenvectors 100
+delaunay_interpolation
+spin_singlet
